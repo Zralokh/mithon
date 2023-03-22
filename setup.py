@@ -18,17 +18,16 @@ with open("version.py") as file:
     exec(file.read(), version)
     config.version = version['__version__']
 
-#TODO add correct email (create one first)
 setup(
     name = 'mithon',
     version = config.version,
     author = 'Zralokh',
-    author_email = 'zralokh@foo.com',
+    author_email = 'zralokh@web.de',
     license = 'GNU GENERAL PUBLIC LICENSE v3',
-    description = 'cli for the language mithon to enable faster development of minecraft code, currently supporst only some features of JE1.19.4',
+    description = 'cli for the language mithon to enable faster development of minecraft code, currently supporst only some features of JE 1.19.4',
     long_description = config.long_description,
     long_description_content_type = "text/markdown",
-    url = '<github url where the tool code will remain>',
+    url = 'github.com/Zralokh/mithon',
     py_modules = ['mithon', 'app'],
     packages = find_packages(),
     install_requires = [config.requirements],
@@ -38,6 +37,8 @@ setup(
         "Operating System :: OS Independent",
     ],
     entry_points = {
-       'console_scripts': ['mithon=mithon:cli']
-    }
+        'console_scripts': [
+            'mithon = mithon:cli',
+        ],
+    },
 )
