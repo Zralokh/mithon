@@ -28,7 +28,7 @@ setup(
     long_description = config.long_description,
     long_description_content_type = "text/markdown",
     url = 'github.com/Zralokh/mithon',
-    py_modules = ['mithon', 'cli', 'app', 'language'],
+    py_modules = ['mithon', 'cli', 'transpiler', 'language'],
     packages = find_packages(),
     install_requires = [config.requirements],
     python_requires='>=3.11',
