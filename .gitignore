@@ -1,10 +1,10 @@
-venv
+/venv/
 
 /dist/
 
 /*.egg-info
 /*.egg
 
-build
+/build/
 
 *.pyc
